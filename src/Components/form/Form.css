@@ -1,0 +1,68 @@
+body{
+    font-family: 'Real Head Pro'
+}
+
+
+.form_main{
+ background: rgba(244, 186, 65, 0.1);
+ width: auto;
+ height: 462px;
+ display: flex;
+ align-items: center; 
+ justify-content: center;
+margin-top: -20px;
+}
+.form_content{
+    margin-left: 20px;
+}
+.form_pic{   
+    margin-top: 40px; 
+}
+p{
+ font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+text-transform: uppercase;
+width: 64px;
+height: 19px;
+}
+
+
+
+.form_h1{
+    font-weight: 600;
+    font-size: 32px;
+}
+h5{
+    font-weight: 375;
+font-size: 16px;
+margin: 10px 0px;
+}
+input{
+ box-sizing: border-box;
+width: 500px;
+height: 48px;
+background: #FFFFFF;
+border: 2px solid #112F45;
+border-radius: 2px;
+
+padding: 5px;
+}
+.Form_button{
+    width: 121px;
+height: 48px;
+
+background: #FFFFFF;
+border: 2px solid #112F45;
+}
+.Form_answer{
+    box-sizing: border-box;
+    position:absolute ;
+    width: 625px;
+margin-top: 15px;
+background: rgba(255, 255, 255, 0.8);
+border-radius: 2px;
+height: 88px;
+font-size: large;
+font-weight: 700;
+}
