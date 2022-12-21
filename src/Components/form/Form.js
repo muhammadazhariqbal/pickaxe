@@ -4,22 +4,26 @@ import "./Form.css";
 
 function Form() {
   const [value, setValue] = useState("");
-const[answer,SetAnswer] = useState("")
-  useEffect(() => {
-  
-  }, [])
-  
+const[answer,SetAnswer] = useState()
+const[error,setError] = useState("")
+ 
 const getAnswer=()=>{
-  fetch(`https://demo.broadn.ai/newpickaxe/getformnew?formid=469JEWJX3MGXRQE4TOQL&uniqueid=0000`).then((res)=>{
-    res.json().then(response=>{
-      console.log("response>>>>>>>>>>",response);
-    }).catch(e=>{
-      console.log("eroor",e.message);
-    })
-    
-       }).catch((error)=>{
-        console.log(error.message)
-       })
+  if(value){
+    fetch(`https://demo.broadn.ai/newpickaxe/submitaform?formid=${value}&uniqueid=0000`).then((res)=>{
+      res.json().then(response=>{
+        console.log("response>>>>>>>>>>",response);
+      }).catch(e=>{
+        console.log("eroor",e.message);
+      })
+      
+         }).catch((error)=>{
+          console.log(error.message)
+         })
+         setError(" ")
+  }else{
+setError("Please include at least 1 character")
+  }
+ 
 }
 
   return (
@@ -35,10 +39,11 @@ const getAnswer=()=>{
           <h5>Ask me anything about Pickaxe and the new beta!</h5>
           <div>
             <input placeholder="How can I help?" onChange={(e)=>setValue(e.target.value)}/>
-            <button className="Form_button" onClick={()=>(getAnswer())}>Ask</button>
+            <button className="Form_button" onClick={()=>(getAnswer()) }>Ask</button>
           </div>
-          {/* <textarea className="Form_answer" value={value} disabled></textarea> */}
+          {/* <textarea className="Form_answer" value={value} ></textarea> */}
          {answer? <div className="Form_answer"></div>:""}
+         {!value?<p style={{color:'red',fontSize:'15px',width:"auto"}}>{error}</p>:''}
         </div>
 
       </div>
