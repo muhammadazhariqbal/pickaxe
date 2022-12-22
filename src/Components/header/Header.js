@@ -13,7 +13,7 @@ function Header() {
         <h2>Pickaxe</h2>
       </div>
       <div className="jumbotron">
-        <h1 >Pickaxe is under construction</h1>
+        <h1>Pickaxe is under construction</h1>
         <h3>
           But the beta version is open to anyone who asks.
           <br />

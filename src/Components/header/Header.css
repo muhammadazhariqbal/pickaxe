@@ -8,38 +8,68 @@ body {
   align-items: center;
   margin-left: 15px;
 }
+
 .header_image {
   margin-right: 5px;
   width: 21px;
   height: 21px;
 }
+
 .jumbotron {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: -20px;
   margin-bottom: 50px;
+  padding: 20px;
 }
-h1{
-    font-weight: 600;
-    font-size: 40px;
-   
-    align-content: center;
+
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+
+
 }
-.h2{
+
+.h2 {
   align-items: center;
 }
+
 h3 {
   margin-top: -10px;
   font-weight: 400;
-font-size: 24px;
-line-height: 30px;
-text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
 }
-.btn{
-    width: 160px;
-height: 48px;
-background: #112F45;
-border-radius: 2px;
-color: white;
+
+.btn {
+  width: 160px;
+  height: 48px;
+  background: #112F45;
+  border-radius: 2px;
+  color: white;
+}
+
+@media only screen and (max-width: 485px) {
+  h1 {
+
+    font-size: 30px;
+
+
+  }
+
+  h3 {
+
+    font-size: 18px;
+
+  }
+  .btn {
+    width: 120px;
+    height: 38px;
+    background: #112F45;
+    border-radius: 2px;
+    color: white;
+  }
 }
