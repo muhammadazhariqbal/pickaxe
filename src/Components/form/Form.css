@@ -12,12 +12,13 @@ body {
     justify-content: center;
     margin-top: -20px;
     
+
 }
 
 .form_content {
     margin-left: 20px;
     padding: 20px;
-    
+
 }
 
 .form_pic {
@@ -53,7 +54,7 @@ input {
     background: #FFFFFF;
     border: 2px solid #112F45;
     border-radius: 2px;
-margin-bottom: 10px;
+    margin-bottom: 10px;
     padding: 5px;
 }
 
@@ -63,6 +64,19 @@ margin-bottom: 10px;
 
     background: #FFFFFF;
     border: 2px solid #112F45;
+}
+
+.output {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 576px;
+    height: 88px;
+    left: 523px;
+    top: 666px;
+
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
 }
 
 .Form_answer {
@@ -85,10 +99,12 @@ margin-bottom: 10px;
         align-items: center;
         justify-content: center;
     }
+
     .form_content {
         margin-left: 0px;
-        
+
     }
+
     input {
 
         width: 80%;
@@ -101,15 +117,16 @@ margin-bottom: 10px;
 
     }
 }
+
 @media only screen and (max-width: 485px) {
     .form_h1 {
-       
+
         font-size: 28px;
-    } 
-  
-    h5 {
-       
-        font-size: 12px;
-        
     }
-  }
+
+    h5 {
+
+        font-size: 12px;
+
+    }
+}
